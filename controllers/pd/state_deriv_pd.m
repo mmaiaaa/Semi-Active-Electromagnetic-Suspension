@@ -1,4 +1,4 @@
-function dx = state_deriv_PD(t,x,A,B,Tvec,zg_vec,zgdot_vec,Kpdef,Kddef,Kacc,Fm,C_acc,D_acc)
+function dx = state_deriv_pd(t,x,A,B,Tvec,zg_vec,zgdot_vec,Kpdef,Kddef,Kacc,Fm,C_acc,D_acc)
 % Mixed-feedback PD + small acceleration feedback 
 
     % Find closest index in time vector
