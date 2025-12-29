@@ -18,7 +18,7 @@ F_max = 2000;
 x0 = zeros(5,1);
 
 % SIMULATION (active system)
-odefun = @(t,x) state_deriv_PID(t,x,A,B,T,z_g,z_gdot,Kpdef,Kddef,Ki,Kacc,F_max,C_acc,D_acc);
+odefun = @(t,x) state_deriv_pid(t,x,A,B,T,z_g,z_gdot,Kpdef,Kddef,Ki,Kacc,F_max,C_acc,D_acc);
 [tt, XX] = ode45(odefun, T, x0);
 
 % PID controller computation (after ODE)
