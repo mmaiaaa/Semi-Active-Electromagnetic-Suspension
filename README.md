@@ -48,12 +48,31 @@ The actuator force ranges within ±800 N, and has more structured and energy-suf
 
 The LQR controller is better suited for energy contraints, while the PD and PID controllers prioritize comfort.
 
+## Running the project
+1. Open MATLAB and navigate to the project folder.
+2. Add required subfolders to MATLAB path:
+   
+   addpath('model');
+   
+   addpath('controllers');
+   
+   addpath('simulations');
+4. Run the main script:
+   
+   run_simulation;
+
 ## Limitations
 - Linearized system dynamics
 - No actuator saturation or thermal effects
 - No sensor noise or time delay
 - Quarter car model (no roll or pitch dynamics)
 - Manually tuned controllers
+
+## Future Improvements
+- Controller Enhancements: adaptive or self-tuning controllers, exploring nonlinear control strategies.
+- Actuator Modeling: include saturation limits.
+- Vehicle Model: full-car model to capture pitch, roll, and cross-coupled dynamics.
+- Simulation and Visualization: integrate 3D vehicle visualization.
 
 ## Tools and Skills
 - Vehicle dynamics modeling
