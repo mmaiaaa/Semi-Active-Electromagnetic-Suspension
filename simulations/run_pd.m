@@ -1,5 +1,8 @@
 clc; close all;
 
+addpath('../model');
+addpath('../controllers/pd');
+
 [A, B, ~, C_acc, D_acc] = state_space_quarter_car();
 [T, z_g, z_gdot] = road_profile_half_sine();
 
