@@ -1,4 +1,4 @@
-function dx = state_deriv_PID(t,x,A,B,Tvec,zg_vec,zgdot_vec,Kpdef,Kddef,Ki,Kacc,Fm,C_acc,D_acc)
+function dx = state_deriv_pid(t,x,A,B,Tvec,zg_vec,zgdot_vec,Kpdef,Kddef,Ki,Kacc,Fm,C_acc,D_acc)
     % x = [z_b; z_t; z_bdot; z_tdot; integral_defl]
 
     % Find closest index in time vector
