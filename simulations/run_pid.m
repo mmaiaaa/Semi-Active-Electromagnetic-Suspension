@@ -24,7 +24,7 @@ odefun = @(t,x) state_deriv_PID(t,x,A,B,T,z_g,z_gdot,Kpdef,Kddef,Ki,Kacc,F_max,C
 % PID controller
 [F_hist, a_b_act] = pid_controller(XX, T, z_g, z_gdot, Kpdef, Kddef, Ki, Kacc, F_max, C_acc, D_acc);
 
-% PLOT
+
 z_b_act    = XX(:,1); 
 z_t_act    = XX(:,2);
 z_bdot_act = XX(:,3); 
